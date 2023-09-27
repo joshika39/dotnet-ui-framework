@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UiFramework.Forms.Impl", "..\_src\UiFramework.Forms.Impl\UiFramework.Forms.Impl.csproj", "{250423E7-2D44-4D51-9BB6-03AF647E630E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UiFramework", "..\_src\UiFramework\UiFramework.csproj", "{2E21FB28-E5DD-407D-A8F7-38BAAC31261F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UiFramework.WPF.Impl", "..\_src\UiFramework.WPF.Impl\UiFramework.WPF.Impl.csproj", "{C2C8EE53-7462-4B7F-89D4-A59E33CE383D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{250423E7-2D44-4D51-9BB6-03AF647E630E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{250423E7-2D44-4D51-9BB6-03AF647E630E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{250423E7-2D44-4D51-9BB6-03AF647E630E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{250423E7-2D44-4D51-9BB6-03AF647E630E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E21FB28-E5DD-407D-A8F7-38BAAC31261F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E21FB28-E5DD-407D-A8F7-38BAAC31261F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E21FB28-E5DD-407D-A8F7-38BAAC31261F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E21FB28-E5DD-407D-A8F7-38BAAC31261F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2C8EE53-7462-4B7F-89D4-A59E33CE383D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2C8EE53-7462-4B7F-89D4-A59E33CE383D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2C8EE53-7462-4B7F-89D4-A59E33CE383D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2C8EE53-7462-4B7F-89D4-A59E33CE383D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
