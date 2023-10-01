@@ -11,7 +11,6 @@ jobs:
     env:
       BUILD_CONFIG: 'Release'
       SOLUTION: '_Solutions/UiFramework.sln'
-      NUGET: '.\Nuget\Packages'
       TOOLS: '.\dotnet-tools'
 
     runs-on: windows-latest
@@ -50,5 +49,5 @@ jobs:
 
     - name: Publish
       run: |
-        dotnet nuget push $env:NUGET${{ steps.get_version.outputs.version }}\*.nupkg --source 'https://api.nuget.org/v3/index.json' --api-key ${{secrets.NUGET_API_KEY}}
-        dotnet nuget push $env:NUGET${{ steps.get_version.outputs.version }}\*.nupkg --source 'https://nuget.pkg.github.com/joshika39/index.json' --api-key ${{secrets.GIT_API_KEY}}
+        dotnet nuget push .\Nuget\Packages\${{ steps.get_version.outputs.version }}\*.nupkg --source 'https://api.nuget.org/v3/index.json' --api-key ${{secrets.NUGET_API_KEY}}
+        dotnet nuget push .\Nuget\Packages\${{ steps.get_version.outputs.version }}\*.nupkg --source 'https://nuget.pkg.github.com/joshika39/index.json' --api-key ${{secrets.GIT_API_KEY}}
