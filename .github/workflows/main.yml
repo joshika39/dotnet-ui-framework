@@ -19,6 +19,7 @@ jobs:
       uses: actions/checkout@v3
       with:
         fetch-depth: 0
+        submodules: recursive
 
     - name: 'Get Version'
       id: get_version
@@ -43,7 +44,7 @@ jobs:
 
     - name: Pack Modules
       shell: pwsh
-      run: '& .\Tools\PushArtifact.ps1 -Version ${{ steps.get_version.outputs.version-without-v }} -WorkDir .\Tools\ -Configuration Release'
+      run: '& .\dotnet-tools\PushArtifact.ps1 -Version ${{ steps.get_version.outputs.version-without-v }} -EnvFile .\.env'
 
     - name: Publish
       run: |

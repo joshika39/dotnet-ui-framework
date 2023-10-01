@@ -10,14 +10,18 @@
 			<group targetFramework="net6.0">
 				<dependency id="joshika39.Core" version="1.0.0-pre0001" />
 			</group>
+			<group targetFramework="net6.0-windows32"></group>
+			<group targetFramework="net6.0-windows64"></group>
 		</dependencies>
-
 	</metadata>
 
-
 	<files>
-		<file src="..\..\Binaries\{CONFIGURATION}\net6.0\joshika39.UiFramework.dll" target="lib\net6.0" />
-		<file src="..\..\Binaries\{CONFIGURATION}\net6.0\joshika39.UiFramework.Forms.Impl.dll" target="lib\net6.0" />
+		<file src="..\..\Binaries\{CONFIGURATION}\net6.0-windows\joshika39.UiFramework.dll" target="lib\net6.0" />
+		<file src="..\..\Binaries\{CONFIGURATION}\net6.0-windows\joshika39.UiFramework.dll" target="lib\net6.0-windows64" />
+		<file src="..\..\Binaries\{CONFIGURATION}\net6.0-windows\joshika39.UiFramework.dll" target="lib\net6.0-windows32" />
+		<file src="..\..\Binaries\{CONFIGURATION}\net6.0-windows\joshika39.UiFramework.Forms.Impl.dll" target="lib\net6.0" />
+		<file src="..\..\Binaries\{CONFIGURATION}\net6.0-windows\joshika39.UiFramework.Forms.Impl.dll" target="lib\net6.0-windows64" />
+		<file src="..\..\Binaries\{CONFIGURATION}\net6.0-windows\joshika39.UiFramework.Forms.Impl.dll" target="lib\net6.0-windows32" />
 		<file src="..\..\README.md" target="docs\" />
 	</files>
 </package>
