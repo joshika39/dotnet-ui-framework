@@ -11,6 +11,8 @@ jobs:
     env:
       BUILD_CONFIG: 'Release'
       SOLUTION: '_Solutions/UiFramework.sln'
+      NUGET: '.\Nuget\Packages'
+      TOOLS: '.\dotnet-tools'
 
     runs-on: windows-latest
 
@@ -44,9 +46,9 @@ jobs:
 
     - name: Pack Modules
       shell: pwsh
-      run: '& .\dotnet-tools\PushArtifact.ps1 -Version ${{ steps.get_version.outputs.version-without-v }} -EnvFile .\.env'
+      run: '& $env:TOOLS\PushArtifact.ps1 -Version ${{ steps.get_version.outputs.version-without-v }} -EnvFile .\.env'
 
     - name: Publish
       run: |
-        dotnet nuget push .\Tools\Packages\${{ steps.get_version.outputs.version }}\*.nupkg --source 'https://api.nuget.org/v3/index.json' --api-key ${{secrets.NUGET_API_KEY}}
-        dotnet nuget push .\Tools\Packages\${{ steps.get_version.outputs.version }}\*.nupkg --source 'https://nuget.pkg.github.com/joshika39/index.json' --api-key ${{secrets.GIT_API_KEY}}
+        dotnet nuget push $env:NUGET${{ steps.get_version.outputs.version }}\*.nupkg --source 'https://api.nuget.org/v3/index.json' --api-key ${{secrets.NUGET_API_KEY}}
+        dotnet nuget push $env:NUGET${{ steps.get_version.outputs.version }}\*.nupkg --source 'https://nuget.pkg.github.com/joshika39/index.json' --api-key ${{secrets.GIT_API_KEY}}
