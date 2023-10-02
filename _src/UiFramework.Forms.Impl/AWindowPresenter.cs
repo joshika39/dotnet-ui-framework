@@ -10,7 +10,5 @@ namespace UiFramework.Forms.Impl
         {
             Window = window ?? throw new ArgumentNullException(nameof(window));
         }
-        
-        public abstract void Show();
     }
 }

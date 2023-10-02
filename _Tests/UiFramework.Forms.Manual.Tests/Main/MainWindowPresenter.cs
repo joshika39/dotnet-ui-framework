@@ -7,13 +7,5 @@ namespace UiFramework.Forms.Manual.Tests.Main
     {
         public MainWindowPresenter(IMainWindow window) : base(window)
         { }
-
-        public override void Show()
-        {
-            if (Window is MainWindow mainWindow)
-            {
-                mainWindow.Show();
-            }
-        }
     }
 }
