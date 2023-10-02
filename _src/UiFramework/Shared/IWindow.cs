@@ -1,8 +1,8 @@
 ﻿namespace UiFramework.Shared
 {
-    public interface IWindow<out T> : IView
+    public interface IWindow : IView
     {
         void Show();
-        T GetWindow();
+        DialogResult ShowOnTop();
     }
 }

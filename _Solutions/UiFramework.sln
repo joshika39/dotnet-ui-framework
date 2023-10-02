@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UiFramework", "..\_src\UiFr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UiFramework.WPF.Impl", "..\_src\UiFramework.WPF.Impl\UiFramework.WPF.Impl.csproj", "{C2C8EE53-7462-4B7F-89D4-A59E33CE383D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3620D487-D742-45E0-B927-9449EFB3D596}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UiFramework.Forms.Manual.Tests", "..\_Tests\UiFramework.Forms.Manual.Tests\UiFramework.Forms.Manual.Tests.csproj", "{D9780028-630B-4ABB-A92D-275C1031E965}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,12 @@ Global
 		{C2C8EE53-7462-4B7F-89D4-A59E33CE383D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2C8EE53-7462-4B7F-89D4-A59E33CE383D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2C8EE53-7462-4B7F-89D4-A59E33CE383D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9780028-630B-4ABB-A92D-275C1031E965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9780028-630B-4ABB-A92D-275C1031E965}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9780028-630B-4ABB-A92D-275C1031E965}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9780028-630B-4ABB-A92D-275C1031E965}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D9780028-630B-4ABB-A92D-275C1031E965} = {3620D487-D742-45E0-B927-9449EFB3D596}
 	EndGlobalSection
 EndGlobal

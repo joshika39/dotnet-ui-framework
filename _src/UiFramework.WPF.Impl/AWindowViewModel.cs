@@ -3,11 +3,11 @@ using UiFramework.Shared;
 
 namespace UiFramework.WPF.Impl
 {
-    public abstract class AWindowViewModel<T> : IWindowViewModel<T> where T : IWindow<T>
+    public abstract class AWindowViewModel : IWindowViewModel
     {
-        public IWindow<T> Window { get; }
+        public IWindow Window { get; }
         
-        protected AWindowViewModel(IWindow<T> window)
+        protected AWindowViewModel(IWindow window)
         {
             Window = window ?? throw new ArgumentNullException(nameof(window));
         }

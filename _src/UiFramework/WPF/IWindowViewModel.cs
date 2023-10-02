@@ -2,8 +2,8 @@
 
 namespace UiFramework.WPF
 {
-    public interface IWindowViewModel<out T> : IViewModel where T : IWindow<T>
+    public interface IWindowViewModel : IViewModel
     {
-        IWindow<T> Window { get; }
+        IWindow Window { get; }
     }
 }

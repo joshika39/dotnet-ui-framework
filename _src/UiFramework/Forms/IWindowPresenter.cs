@@ -2,8 +2,8 @@
 
 namespace UiFramework.Forms
 {
-    public interface IWindowPresenter<out T> where T : IWindow<T>
+    public interface IWindowPresenter
     {
-        public T Window { get; }
+        IWindow Window { get; }
     }
 }
