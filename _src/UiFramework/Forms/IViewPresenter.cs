@@ -1,8 +1,7 @@
-﻿using UiFramework.Shared;
-
-namespace UiFramework.Forms;
-
-public interface IViewPresenter
+﻿namespace UiFramework.Forms
 {
-    IView View { get; }
+    public interface IViewPresenter
+    {
+        IView View { get; }
+    }
 }

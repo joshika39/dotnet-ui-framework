@@ -8,15 +8,15 @@ public static class Program
     public static void Main()
     {
         var modules = LoadModules();
-        var mainWindowPresenter = modules.GetService<IMainWindowPresenter>();
-        Console.WriteLine(mainWindowPresenter?.Window.ShowOnTop());
+        var window = modules.GetRequiredService<IMainWindow>();
+        Console.WriteLine(window.ShowOnTop());
     }
 
     private static IServiceProvider LoadModules()
     {
         var serviceCollection = new ServiceCollection();
-        serviceCollection.AddTransient<IMainWindow, MainWindow>();
         serviceCollection.AddTransient<IMainWindowPresenter, MainWindowPresenter>();
+        serviceCollection.AddTransient<IMainWindow, MainWindow>();
         return serviceCollection.BuildServiceProvider();
     }
 }

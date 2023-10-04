@@ -1,9 +1,6 @@
-﻿using UiFramework.Shared;
-
-namespace UiFramework.Forms
+﻿namespace UiFramework.Forms
 {
     public interface IWindowPresenter
     {
-        IWindow Window { get; }
     }
 }
