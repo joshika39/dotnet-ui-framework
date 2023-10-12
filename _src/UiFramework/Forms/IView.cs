@@ -1,7 +1,7 @@
 ﻿namespace UiFramework.Forms
 {
-    public interface IView : Shared.IView
+    public interface IView <out T> : Shared.IView where T : IViewPresenter
     {
-        IViewPresenter Presenter { get; }
+        T Presenter { get; }
     }
 }
