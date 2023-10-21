@@ -8,7 +8,7 @@
 		<authors>joshika39</authors>
 		<dependencies>
 			<group targetFramework="net6.0">
-				<dependency id="joshika39.Core" version="1.0.0-pre0001" />
+				<dependency id="joshika39.Core" version="1.1.9" />
 			</group>
 			<group targetFramework="net6.0-windows32"></group>
 			<group targetFramework="net6.0-windows64"></group>
